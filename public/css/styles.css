@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('../fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url('../fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: Benton-Sans;
+    src: url('../fonts/Benton-Sans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Benton-Sans-Light;
+    src: url('../fonts/Benton-Sans-Light.ttf');
+}
+
+.titulo{
+	font-family:Oswald-Bold;
+	color:red;
+	padding:15px;
+	margin-top:-15px;
+	font-size:30px;
+}
+
+.input{
+	border:1px solid rgba(255,255,255,0.2);
+	background:rgba(0,0,0,0.1);
+	color:#fff;
+	font-size:17px;
+	font-weight:100;
+	padding:5px;
+}
+button.input{
+	background:none;
+	color:#aaa;
+}
+
+body{
+	background:url('../img/fondo.jpg');
+}
+
+button.input:hover{
+	background:none;
+	color:#888;
+}
+
+*{ 
+    outline: none;
+}
+
+.login{font-family: Benton-Sans;
+	margin:50px 25px 50px 25px;padding:50px 25px 25px 25px;background:white;max-width:400px;border-radius:15px;
+	-webkit-box-shadow: 0px 0px 69px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 69px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 69px -1px rgba(0,0,0,0.75);
+}
+
+@media only screen and (min-width: 1023px) {
+	body{
+		background-size:cover;
+	}
+}
+@media only screen and (max-width: 1024px) {
+body{
+		background-size:none;
+	}
+	}
+
+.input-group-addon{
+	background:none;
+}
+
+.boton,.form-control{
+	font-family: Benton-Sans;
+}
+
+.boton:hover{
+	border-color:rgba(255,0,0,.3);
+}
+
+.gradiente{
+	background: -webkit-linear-gradient(#e11c1c, #d9aa21);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.olvido{
+	color:#777;
+	border-top:1px solid #eee;
+	padding-top:10px;
+	margin-top:20px;
+	font-family:Benton-Sans-Light;
+	text-align:center;
+	cursor:pointer;
+}
+
+.olvido:hover{
+		background: -webkit-linear-gradient(#e11c1c, #d9aa21);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
