@@ -46,6 +46,7 @@ button.input{
 
 body{
 	background:url('../img/fondo.jpg');
+	background-size:100%;
 }
 
 button.input:hover{

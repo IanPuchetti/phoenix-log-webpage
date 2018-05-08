@@ -75,9 +75,23 @@
     margin-left: 10px;
 }
 
-body.login{
-  font: 22px Benton-Sans-Light;
-  background: url('/img/fondo.jpg');
+
+
+@media only screen and (min-width: 1200px) {
+	body.login{
+		font: 22px Benton-Sans-Light;
+		background: url('/img/fondo.jpg');
+		background-size:100%;
+	  }
+}
+
+@media only screen and (max-width: 1200px) {
+	body.login{
+		font: 22px Benton-Sans-Light;
+		background: url('/img/fondo.jpg');
+		background-attachment: fixed;
+		background-position:center;
+	  }
 }
 
 body.error{
@@ -113,11 +127,13 @@ a:hover{
 }
 header.login{
 	font: 35px Oswald;
-	background:white;
+	background:#fff;
 	position:absolute;
 	top:0px;left:0px;
 	width:100%;
 	padding:10px 0px 20px 0px;
+	position:fixed;
+	z-index:2;
 }
 header.login img{
 	margin:10px;
@@ -228,7 +244,7 @@ ul.dropdown-menu{
 }
 
 ul.dropdown-menu li a:hover{
-		background: -webkit-linear-gradient(#e11c1c, #d9aa21);
+	background: -webkit-linear-gradient(#e11c1c, #d9aa21);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
@@ -349,4 +365,125 @@ margin-top:-3px;
 
 .butn:hover{
 	border-color:#ffd08c;
+}
+
+.buttons{
+	display:inline-block;
+	margin-left:30%;
+	font-family: "Product";
+	font-size:18px;
+}
+
+.buttons span{
+	margin:25px;
+	cursor:pointer;
+	color:#e27347;
+}
+
+.buttons span:hover{
+	color:#ff5511;
+}
+
+.content{
+	width:100%;
+	margin-top:50px;
+	margin-left:-100px;
+}
+
+.content .bloque1{
+	width:100%;
+	padding-top:250px;
+	padding-bottom:25px;
+	background:rgba(0,0,0,0.4);
+}
+
+.content .bloque2{
+	width:100%;
+	background-color:#fff;
+	background-image: url("../img/depo2.jpg");
+	background-size:cover;
+	z-index:1;
+}
+
+.content .bloque3{
+	width:100%;
+	background:url("../img/deposito.jpg");
+	z-index:1;
+	background-size: cover;
+}
+
+.bloque1 .grande{
+	color:#fff;
+	margin:50px;
+	font-size:100px;
+}
+
+.bloque2 .grande{
+	color:rgb(223, 98, 25);
+	margin:50px;
+	margin-top:0px;
+	font-size:100px;
+}
+
+.bloque3 .grande{
+	color:#fff;
+	margin-left:50px;
+	font-size:100px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	.depo1{
+		display:none;
+	}
+}
+
+.col1{
+	display:inline-block;
+	width:55%;
+	font-size:37px;
+	color:#444;
+	padding:10px;
+}
+
+.col2{
+	display:inline-block;
+	width:40%;
+	text-align:right;
+}
+
+.form{
+	text-align:right;
+}
+
+input, textarea{
+	background: rgba(0,0,0,0.5);
+	border:1px solid #ddd;
+	border-radius:5px;
+	font-size:50px;
+	padding:10px;
+	margin:50px;
+	width:80%;
+	color:#fff;
+	margin-bottom:0px;
+	resize: none;
+}
+
+button{
+	background: rgba(0,0,0,0.5);
+	border:1px solid #ddd;
+	border-radius:5px;
+	font-size:50px;
+	padding:10px;
+	margin:50px;
+	width:30%;
+	color:#fff;
+	margin-bottom:50px;
+}
+
+
+
+*{
+	overflow-x:hidden;
 }
