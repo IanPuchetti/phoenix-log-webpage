@@ -6,19 +6,20 @@ block content
    img(src="/img/logo.png").logo
    span.color-gr PHOENIX-LOG
    .buttons
-    span INICIO
-    span QUIENES SOMOS
-    span CONTACTANOS
+    a(href="#inicio") INICIO
+    a(href="#quienessomos") QUIENES SOMOS
+    a(href="#contactanos") CONTACTANOS
+  #inicio
   .content
    .bloque1
     .grande
       | Una empresa <br>
       | de logística.
-   .bloque2
+   .bloque2#quienessomos
     .grande
      |  ¿Quiénes somos?
      .col1  Somos una empresa que brinda servicios de logística y distribución a nivel nacional ....
-   .bloque3
+   .bloque3#contactanos
     .grande Contactate con nosotros
     .form
       input(placeholder="Email...", type="email")

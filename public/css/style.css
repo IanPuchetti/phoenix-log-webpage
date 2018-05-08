@@ -374,13 +374,13 @@ margin-top:-3px;
 	font-size:18px;
 }
 
-.buttons span{
+.buttons a{
 	margin:25px;
 	cursor:pointer;
 	color:#e27347;
 }
 
-.buttons span:hover{
+.buttons a:hover{
 	color:#ff5511;
 }
 
@@ -399,6 +399,8 @@ margin-top:-3px;
 
 .content .bloque2{
 	width:100%;
+	padding-top:100px;
+	padding-bottom:50px;
 	background-color:#fff;
 	background-image: url("../img/depo2.jpg");
 	background-size:cover;
@@ -406,6 +408,7 @@ margin-top:-3px;
 }
 
 .content .bloque3{
+	padding-top:100px;
 	width:100%;
 	background:url("../img/deposito.jpg");
 	z-index:1;
