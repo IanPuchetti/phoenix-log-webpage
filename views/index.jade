@@ -3,26 +3,61 @@ extends layout
 block content
  body.login
   header.login
-   img(src="/img/logo.png").logo
-   span.color-gr PHOENIX-LOG
+   .logo
+    img(src="/img/logo.png").logo
+    span.color-gr PHOENIX-LOG
    .buttons
-    a(href="#inicio") INICIO
-    a(href="#quienessomos") QUIENES SOMOS
-    a(href="#contactanos") CONTACTANOS
+    a.no-mobile(href="#inicio") INICIO
+    a.no-mobile(href="#quienessomos") NUESTRO TRABAJO
+    a.no-mobile(href="#contactanos") CONTACTANOS
+    img.btn-mobile(src="/img/menu.png", style="width:30px;")
   #inicio
   .content
    .bloque1
     .grande
       | Una empresa <br>
       | de logística.
+    .cuadrado(style="width:400px;")
+      .header Nosotros
+      .text
+        | Cumplimos una labor de intermediarios entre los productores y los consumidores,
+        | lo primero que debemos decir es que somos una empresa que se relaciona con actividades
+        | como el traslado y almacenamiento de bienes y servicios, la gestión de inventarios, el transporte, la distribución, entre otras.
+    .btnfoot  Visita nuestro perfil
    .bloque2#quienessomos
-    .grande
-     |  ¿Quiénes somos?
-     .col1  Somos una empresa que brinda servicios de logística y distribución a nivel nacional ....
-   .bloque3#contactanos
-    .grande Contactate con nosotros
-    .form
-      input(placeholder="Email...", type="email")
-      textarea(placeholder="Consulta...")
-      button  Enviar
+      .cuadrado(style="width:400px;height:450px;")
+        .header ¿Qué hacemos?
+        .text
+          | Cumplimos una labor de intermediarios entre los productores y los consumidores,
+          | lo primero que debemos decir es que somos una empresa que se relaciona con actividades
+          | como el traslado y almacenamiento de bienes y servicios, la gestión de inventarios, el transporte, la distribución, entre otras.
+        img(src="/img/galpon.png", style="width:300px;margin:0px 25px 25px 50px;")
+      .cuadrado(style="width:100%;max-width:400px;height:450px;")
+        .header ¿Cómo lo hacemos?
+        .text
+          | Cumplimos una labor de intermediarios entre los productores y los consumidores,
+          | lo primero que debemos decir es que somos una empresa que se relaciona con actividades
+          | como el traslado y almacenamiento de bienes y servicios, la gestión de inventarios, el transporte, la distribución, entre otras.
+        img(src="/img/camion.png", style="width:200px;margin:0px 25px 25px 50px;")
+      .cuadrado(style="width:100%;max-width:400px;height:450px;")
+        .header Control y seguimiento
+        .text
+          | Cumplimos una labor de intermediarios entre los productores y los consumidores,
+          | lo primero que debemos decir es que somos una empresa que se relaciona con actividades
+          | como el traslado y almacenamiento de bienes y servicios, la gestión de inventarios, el transporte, la distribución, entre otras.
+        img(src="/img/monitoreo.png", style="width:140px;margin:0px 25px 25px 120px;")
+   .bloque3#contactanos(style="padding-top:70px;")
+    .cuadrado(style="width:400px;float:left;")
+      .header Contactanos
+      .text
+        input(placeholder="Nombre y Apellido")
+        input(placeholder="Correo electrónico")
+        input(placeholder="Telefono")
+        textarea(placeholder="Cuentenos su necesidad...", style="height:100px;")
+        button  Enviar
+      .footer(style="border-top:1px solid #aaa;font-size:15px;") Completa el formulario, presiona 'Enviar' y nos comunicaremos a la brevedad.
+    .cuadrado.no-mobile(style="width:100%;max-width:800px;float:right;")
+      .header(style="font-size:15px;font-family:ml;") Nuestra oficina
+      .text(style="height:400px;background:url('/img/mapa.jpg')")
+      .footer(style="border-top:1px solid #aaa;font-size:15px;") Telefono: (011) 4567-890
       

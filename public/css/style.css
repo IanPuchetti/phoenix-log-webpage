@@ -18,6 +18,21 @@
     src: url('/fonts/Oswald-Bold.ttf');
 }
 
+@font-face {
+    font-family: m;
+    src: url('/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: mb;
+    src: url('/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: ml;
+    src: url('/fonts/Montserrat-Light.ttf');
+}
+
 .no-select{
         user-select: none;
         -moz-user-select: none;
@@ -79,19 +94,36 @@
 
 @media only screen and (min-width: 1200px) {
 	body.login{
-		font: 22px Benton-Sans-Light;
+		font: 22px m;
 		background: url('/img/fondo.jpg');
 		background-size:100%;
 	  }
+
+	.no-mobile{
+		display:inline-block;
+	}
+
+	.btn-mobile{
+		display:none;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
 	body.login{
-		font: 22px Benton-Sans-Light;
+		font: 22px m;
 		background: url('/img/fondo.jpg');
-		background-attachment: fixed;
-		background-position:center;
+		background-position:top left;
+		background-size:1500px;
 	  }
+	
+	.btn-mobile{
+		display:inline-block;
+		float:right;
+	}
+
+	.no-mobile{
+		display:none; 
+    }
 }
 
 body.error{
@@ -110,7 +142,7 @@ body.app{
 }
 
 .app{
-		font-family:Product;
+		font-family:m;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -182,7 +214,7 @@ button.input{
 .login-box{
 	position:absolute;
 	top:100px;
-	font-family: Benton-Sans;
+	font-family: m;
 	margin:50px 25px 50px 25px;padding:50px 25px 25px 25px;background:white;max-width:400px;border-radius:15px;
 	-webkit-box-shadow: 0px 0px 69px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 69px -1px rgba(0,0,0,0.75);
@@ -199,7 +231,7 @@ button.input{
 
 .boton,.form-control{
 	height:40px;
-	font-family: Benton-Sans;
+	font-family: m;
 }
 .boton{
 	margin-top:10px;
@@ -214,7 +246,7 @@ button.input{
 	border-top:1px solid #eee;
 	padding-top:10px;
 	margin-top:20px;
-	font-family:Benton-Sans-Light;
+	font-family:m;
 	text-align:center;
 	cursor:pointer;
 }
@@ -370,18 +402,20 @@ margin-top:-3px;
 .buttons{
 	display:inline-block;
 	margin-left:30%;
-	font-family: "Product";
-	font-size:18px;
+	font-family: "m";
+	font-size:15px;
+	margin:35px;
+	float:right;
 }
 
 .buttons a{
 	margin:25px;
 	cursor:pointer;
-	color:#e27347;
+	color:#ee5316;
 }
 
 .buttons a:hover{
-	color:#ff5511;
+	color:#e44101;
 }
 
 .content{
@@ -392,7 +426,7 @@ margin-top:-3px;
 
 .content .bloque1{
 	width:100%;
-	padding-top:250px;
+	padding-top:100px;
 	padding-bottom:25px;
 	background:rgba(0,0,0,0.4);
 }
@@ -402,13 +436,12 @@ margin-top:-3px;
 	padding-top:100px;
 	padding-bottom:50px;
 	background-color:#fff;
-	background-image: url("../img/depo2.jpg");
 	background-size:cover;
 	z-index:1;
 }
 
 .content .bloque3{
-	padding-top:100px;
+	padding-top:10px;
 	width:100%;
 	background:url("../img/deposito.jpg");
 	z-index:1;
@@ -418,7 +451,7 @@ margin-top:-3px;
 .bloque1 .grande{
 	color:#fff;
 	margin:50px;
-	font-size:100px;
+	font-size:50px;
 }
 
 .bloque2 .grande{
@@ -430,8 +463,8 @@ margin-top:-3px;
 
 .bloque3 .grande{
 	color:#fff;
-	margin-left:50px;
-	font-size:100px;
+	margin:25px;
+	font-size:50px;
 }
 
 
@@ -462,12 +495,12 @@ margin-top:-3px;
 
 input, textarea{
 	background: rgba(0,0,0,0.5);
-	border:1px solid #ddd;
+	border:1px solid #aaa;
 	border-radius:5px;
-	font-size:50px;
-	padding:10px;
-	margin:50px;
-	width:80%;
+	font-size:15px;
+	padding:5px 10px 5px 10px;
+	width:300px;
+	margin:15px;
 	color:#fff;
 	margin-bottom:0px;
 	resize: none;
@@ -477,16 +510,75 @@ button{
 	background: rgba(0,0,0,0.5);
 	border:1px solid #ddd;
 	border-radius:5px;
-	font-size:50px;
+	font-size:15px;
 	padding:10px;
-	margin:50px;
-	width:30%;
+	margin:15px;
+	width:300px;
 	color:#fff;
-	margin-bottom:50px;
+	margin-bottom:10px;
 }
 
 
 
 *{
 	overflow-x:hidden;
+}
+
+div.logo{
+	margin-top:10px;
+	float:left;
+}
+
+div.cuadrado {
+	color:#fff;
+	border:1px solid #aaa;
+	background-color:rgba(0,0,0,0.6);
+	border-radius: 5px;
+	margin:5px 25px 25px 50px;
+}
+
+div.cuadrado .header {
+	padding:15px;
+	font-size:25px;
+	border-bottom:1px solid #aaa;
+}
+
+div.cuadrado .text {
+	font-family: ml;
+	font-size:15px;
+	padding:20px;
+}
+
+.btnfoot {
+	float:right;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:10px;
+	font-family: ml;
+	width:200px;
+	font-size:17px;
+	color:#aaa;
+	cursor:pointer;
+	margin:25px;
+}
+
+.btnfoot:hover {
+	color:#fff;
+	border-color:#fff;
+}
+
+.bloque2 .cuadrado{
+	display:inline-block;
+	border-color:#ccc;
+	color:#444;
+	width:500px;
+	background-color:#fff;
+} 
+
+.footer{
+	background: rgba(0,0,0,.5);
+	padding:15px;
+	font-size:25px;
+	border-top:1px solid #aaa;
+	font-family: ml;
 }
