@@ -33,6 +33,11 @@
     src: url('/fonts/Montserrat-Light.ttf');
 }
 
+.mantenimiento{
+	text-align:center;
+	padding-top:20%;
+}
+
 .no-select{
         user-select: none;
         -moz-user-select: none;
@@ -483,6 +488,17 @@ margin-top:-3px;
 	.depo1{
 		display:none;
 	}
+
+	.mantenimiento{
+		padding-top:50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.mantenimiento{
+		padding-top:60%;
+	}
 }
 
 .col1{
@@ -591,9 +607,4 @@ div.cuadrado .text {
 	font-size:25px;
 	border-top:1px solid #aaa;
 	font-family: ml;
-}
-
-.mantenimiento{
-	text-align:center;
-	padding-top:20%;
 }
